@@ -360,6 +360,15 @@ th {
     nav a {
         font-size: 12px;
     }
+    #img1 {
+        text-align: center; /* Posisikan gambar di tengah */
+        margin-top: 300px; /* Beri jarak bawah */
+    }
+
+    #img1 img {
+        max-width: 100%; /* Pastikan gambar tidak melebihi lebar container */
+        height: auto; /* Biarkan tinggi gambar disesuaikan */
+    }
 
     .package-detail {
         display: flex;
