@@ -423,9 +423,9 @@ th {
         margin: 0 auto; /* Center button */
     }
 }
-@media (max-width: 374px) {
+@media (max-width: 390px) {
     nav a {
-        font-size: 10px;
+        font-size: 12px;
     }
     .home h1 {
         font-size: 40px; /* Ubah ukuran h1 sesuai kebutuhan */
