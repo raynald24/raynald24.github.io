@@ -423,6 +423,65 @@ th {
         margin: 0 auto; /* Center button */
     }
 }
+@media (max-width: 346px) {
+    nav a {
+        font-size: 10px;
+    }
+    .home h1 {
+        font-size: 40px; /* Ubah ukuran h1 sesuai kebutuhan */
+    }
+
+    #img1 {
+        text-align: center; /* Posisikan gambar di tengah */
+        margin-top: 200px; /* Beri jarak bawah */
+    }
+
+    #img1 img {
+        max-width: 100%; /* Pastikan gambar tidak melebihi lebar container */
+        height: auto; /* Biarkan tinggi gambar disesuaikan */
+    }
+
+    .package-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Mengatur posisi item di tengah */
+        row-gap: 24px;
+    }
+
+    .package-detail-item {
+        width: auto; /* Kembali ke lebar aslinya */
+        max-width: 100%; /* Maksimum lebar sesuai container */
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+        transition: transform 0.3s ease; /* Transisi saat hover */
+    }
+
+    .package-detail-item:hover {
+        transform: scale(1.05); /* Efek membesar saat hover */
+    }
+
+    .package-detail-item img {
+        width: 100%;
+        filter: grayscale(1); /* Efek gambar grayscale */
+    }
+
+    .package-detail-item h2 {
+        font-size: 18px;
+        text-align: center; /* Posisi teks di tengah */
+    }
+
+    .package-detail-item p {
+        font-size: 12px;
+        text-align: center; /* Posisi teks di tengah */
+    }
+
+    .accordion-button {
+        font-size: 12px;
+        padding: 6px;
+        width: 90%; /* Lebar button */
+        max-width: 200px; /* Maksimum lebar button */
+        margin: 0 auto; /* Center button */
+    }
+}
 
 @keyframes bounceIn {
     0% {
