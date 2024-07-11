@@ -423,7 +423,7 @@ th {
         margin: 0 auto; /* Center button */
     }
 }
-@media (max-width: 346px) {
+@media (max-width: 374px) {
     nav a {
         font-size: 10px;
     }
