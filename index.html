@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>superkeyinstitute</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <header id="header">
+        <img src="logo.webp" alt="">
+        <nav>
+            <a href="#About">About</a>
+            <a href="#Service">Service</a>
+            <a href="#Course">Course</a>
+            <a href="#Contact Us">Contact Us</a>
+            <a href="#Login/Register">Login/Register</a>
+            
+        </nav>
+        <a id= "cart" href="Cart.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+        </a>
+        
+    </header>
+
+    <section id="home" class="home container">
+        <div class="row d-flex align-items-center   " >
+            <div class="col-7">
+                <h1 class="fw-bold">Certified Digital
+                    Entrepreneur Program</h1>
+                <p> This comprehensive program is designed to equip aspiring and existing entrepreneurs with the skills and
+                    knowledge to succeed in the digital world. This program is spearheaded by Superkey Consulting Group, a
+                    group of companies dedicated to developing and supporting digital entrepreneurs.</p>
+                
+
+                <a class="btn button" href="#package" style="color:#fff" >Package</a>
+            </div>
+            <div id="img1" class="col-5">
+                <img src="bg4.webp" alt="Potrait">
+            </div>    
+        </div>
+    </section>
+    <section id="content">
+        <div id="img2" class="col-md-5">
+            <img src="SCG-Award.webp" alt="SCG Award">
+        </div>
+    
+        <div class="accordion">
+            <button class="accordion-button" style="background-color: #FF8000; color: #fff;" onclick="toggleAccordion(event, 'overview')" onmouseover="this.style.backgroundColor='#FFC108';" 
+            onmouseout="this.style.backgroundColor='#FF8000';">Overview</button>
+
+            <div id="overview" class="accordion-content">
+                <p>
+                    Certified Digital Entrepreneur is a program initiated by Superkey Consulting Group together with its company members, namely Superkey Incubator, Superkey Media, Superkey Institute, and Superkey Creative.
+                </p>
+                <p>
+                    Sub Materi:
+                    <ul>
+                        <li>Understanding Digital Entrepreneurship</li>
+                        <li>Fundamental Digital Entrepreneurship</li>
+                        <li>Business Case Study</li>
+                        <li>Zoom Video Communication</li>
+                        <li>Communicating the Company's Image Through Digital Media</li>
+                        <li>Cloud Computing for Startup</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Digital Finance</li>
+                        <li>Social Media Activation & Marketplace Strategy</li>
+                    </ul>
+                </p>
+            </div>
+    
+            <button class="accordion-button" style="background-color: #FF8000; color: #fff;"onclick="toggleAccordion(event, 'curriculum')" onmouseover="this.style.backgroundColor='#FFC108';" 
+            onmouseout="this.style.backgroundColor='#FF8000';">Curriculum</button>
+            <div id="curriculum" class="accordion-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Module</th>
+                            <th>Topics Covered</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Digital Marketing Fundamentals</td>
+                            <td>Marketing Principles, Digital Channels, Customer Journey</td>
+                        </tr>
+                        <tr>
+                            <td>Social Media Marketing</td>
+                            <td>Social Media Platforms, Content Strategy, Influencer Marketing</td>
+                        </tr>
+                        <tr>
+                            <td>Search Engine Optimization (SEO)</td>
+                            <td>Keyword Research, On-Page Optimization, Off-Page Strategies</td>
+                        </tr>
+                        <tr>
+                            <td>Content Marketing</td>
+                            <td>Content Creation, Content Distribution, Content Strategy</td>
+                        </tr>
+                        <tr>
+                            <td>E-commerce Strategy</td>
+                            <td>E-commerce Platforms, Product Management, Customer Service</td>
+                        </tr>
+                        <tr>
+                            <td>Online Business Models</td>
+                            <td>Business Model Canvas, Revenue Models, Digital Business Strategies</td>
+                        </tr>
+                        <tr>
+                            <td>Digital Tools & Technologies</td>
+                            <td>Analytics Tools, Marketing Automation, CRM Software</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>  
+    
+            <button class="accordion-button" style="background-color: #FF8000; color: #fff;" onclick="toggleAccordion(event, 'benefit')" onmouseover="this.style.backgroundColor='#FFC108';" 
+            onmouseout="this.style.backgroundColor='#FF8000';">Benefit Program</button>
+            <div id="benefit" class="accordion-content">
+                <p>
+                    Participation in this program offers numerous benefits for aspiring and existing entrepreneurs, equipping them with the knowledge and skills to succeed in the digital marketplace.
+                </p>
+                <h3>Program Benefits</h3>
+                <ul>
+                    <li><strong>Enhanced Digital Skills:</strong> Gain a comprehensive understanding of digital marketing, e-commerce, and online business strategies.</li>
+                    <li><strong>Increased Business Growth:</strong> Implement effective digital strategies to attract new customers, expand reach, and drive revenue growth.</li>
+                    <li><strong>Competitive Advantage:</strong> Stay ahead of the curve with the latest digital trends and technologies, positioning your business for success.</li>
+                    <li><strong>Networking Opportunities:</strong> Connect with fellow entrepreneurs, industry experts, and mentors, fostering collaboration and growth.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="package">
+        <div class="package-header">
+            <div>
+                <h1>Our Package</h1>
+                <p style="font-style: italic;">
+                    "Our company offers Digital Entrepreneur certification packages: Self Learning, MIC, and Maxima. Each package is designed to help you develop digital skills and business strategies, preparing you to tackle challenges as a digital entrepreneur."
+                </p>
+            </div>
+            <a class="btn button" href="#contact" style="color:#fff" >contact</a>
+        </div>
+        <div class="package-detail">
+            <div class="package-detail-item">
+                <img src="1.jpg" alt="service 1 image">
+                <h2>Self Learning</h2>
+                <p>Rp. 250.000,-</p>
+                <p>The participants will access freely
+                    the modules in our LMS and do
+                    the tasks for 6 months.</p>
+                <a class="btn button" href="#Cart" style="color:#fff" >Add Cart</a>
+            </div>
+            <div class="package-detail-item">
+                <img src="2.jpg" alt="service 2 image">
+                <h2>Mic Package</h2>
+                <p>Rp. 500.000,-</p>
+                <p>The participants can access e-
+                    module but they are scheduled to
+                    discuss with the mentors twice in
+                    6 months virtually.</p>
+                <a class="btn button" href="#Cart" style="color:#fff" >Add Cart</a>
+            </div>
+            <div class="package-detail-item">
+                <img src="3.jpg" alt="service 4 image">
+                <h2>Maxima Package</h2>
+                <p>Rp. 1.000.000,-</p>
+                <p>The participants join the class
+                    with the mentors for 6 months,
+                    and can access the materials by
+                    LMS till 6 Months.</p>
+                <a class="btn button" href="#Cart" style="color:#fff" >Add Cart</a>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div>
+            <img src="logo.webp" alt="">
+        </div>
+    
+        <div class="social-icon">
+
+            <p>© 2024 Superkey Consulting Group. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+        
+    <script src="script.js"></script>
+</body>
+</html>
