@@ -263,22 +263,39 @@ th {
 
 /* Media Queries for Responsiveness */
 
-/* For tablets and smaller devices */
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
     #header {
-        padding: 20px 64px;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav a {
+        margin-right: 10px;
+    }
+
+    .package-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .package-header h1 {
+        font-size: 48px;
+    }
+
+    .package-detail {
+        grid-template-columns: 1fr;
+        row-gap: 32px;
     }
 
     #content {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
     }
 
     #img2 img {
         width: 100%;
         height: auto;
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .accordion {
@@ -286,29 +303,13 @@ th {
         margin-left: 0;
     }
 
-    .package-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .package-detail {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 32px;
-        row-gap: 32px;
-        margin-top: 32px;
-    }
-
     #footer {
-        padding: 20px 64px;
         flex-direction: column;
-        align-items: center;
+        padding: 20px;
         text-align: center;
     }
 
     .social-icon {
-        flex-direction: column;
-        align-items: center;
         margin-top: 10px;
     }
 
@@ -318,51 +319,87 @@ th {
     }
 }
 
-/* For mobile devices */
 @media (max-width: 768px) {
     #header {
-        padding: 10px;
-        flex-direction: column;
-        align-items: center;
+        padding: 20px;
     }
 
     nav a {
-        margin-right: 10px;
+        margin-right: 5px;
+        font-size: 14px;
     }
 
-    .home h1 {
-        font-size: 48px;
+    .package-header h1 {
+        font-size: 36px;
     }
 
-    #img1 img {
-        max-width: 100%;
+    .package-detail {
+        row-gap: 24px;
+      
+    }
+
+    .package-detail-item h2 {
+        font-size: 20px;
+    }
+
+    .package-detail-item p {
+        font-size: 14px;
     }
 
     #content {
         padding: 20px;
     }
 
+    .accordion-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    nav a {
+        font-size: 12px;
+    }
+
     .package-detail {
-        grid-template-columns: 1fr;
-
-        row-gap: 60px;
-    }
-
-    #footer {
-        padding: 20px;
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Mengatur posisi item di tengah */
+        row-gap: 24px;
     }
 
-    .social-icon {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
+    .package-detail-item {
+        width: auto; /* Kembali ke lebar aslinya */
+        max-width: 100%; /* Maksimum lebar sesuai container */
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+        transition: transform 0.3s ease; /* Transisi saat hover */
     }
 
-    .social-icon p {
-        margin-left: 0;
-        margin-top: 10px;
+    .package-detail-item:hover {
+        transform: scale(1.05); /* Efek membesar saat hover */
+    }
+
+    .package-detail-item img {
+        width: 100%;
+        filter: grayscale(1); /* Efek gambar grayscale */
+    }
+
+    .package-detail-item h2 {
+        font-size: 18px;
+        text-align: center; /* Posisi teks di tengah */
+    }
+
+    .package-detail-item p {
+        font-size: 12px;
+        text-align: center; /* Posisi teks di tengah */
+    }
+
+    .accordion-button {
+        font-size: 12px;
+        padding: 6px;
+        width: 90%; /* Lebar button */
+        max-width: 200px; /* Maksimum lebar button */
+        margin: 0 auto; /* Center button */
     }
 }
 
